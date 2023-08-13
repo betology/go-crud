@@ -7,6 +7,7 @@ import (
 
 func init() {
 	initializers.LoadEnvVariables()
+	initializers.ConnectToDB()
 }
 
 func main() {
@@ -18,5 +19,5 @@ func main() {
 		})
 	})
 
-	r.Run() // listen and serve on 0.0.0.0:8080
+	r.Run()
 }
